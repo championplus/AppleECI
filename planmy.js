@@ -1,3 +1,4 @@
+// Creador: Sergio Ávila - ECI 380 Huelva
 const planState={data:null,category:"iPhone",months:24,product:null};
 const byId=id=>document.getElementById(id);
 const euro=value=>new Intl.NumberFormat("es-ES",{style:"currency",currency:"EUR"}).format(value);

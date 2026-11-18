@@ -1,3 +1,4 @@
+// Creador: Sergio Ávila - ECI 380 Huelva
 const state={products:[],query:"",family:null,subfamily:null,connectivity:null};
 const $=id=>document.getElementById(id);
 const iconFor=f=>/iphone/i.test(f)?"▯":/ipad/i.test(f)?"▭":/watch/i.test(f)?"◉":/macbook/i.test(f)?"⌨":/imac|pantalla/i.test(f)?"▣":"◆";
@@ -218,7 +219,7 @@ async function start(){
   try{
     state.products=Array.isArray(window.CHAMPION_CATALOG)
       ? window.CHAMPION_CATALOG
-      : await fetch("catalog.json?v=43").then(r=>{if(!r.ok)throw Error();return r.json()});
+      : await fetch("catalog.json?v=45").then(r=>{if(!r.ok)throw Error();return r.json()});
     renderFilters();renderSectionPicker();renderProducts();
   }catch{$("catalog").innerHTML='<section class="empty glass"><h2>No se pudo cargar el catálogo</h2><p>Comprueba la conexión y vuelve a intentarlo.</p></section>'}
 }
