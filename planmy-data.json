@@ -1,0 +1,1164 @@
+{
+  "source": "Calculadora PLANmy - 6 Noviembre 2026.xlsx",
+  "rates": {
+    "24": 10.57,
+    "36": 11.42
+  },
+  "plans": [
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 18 Pro Max 256GB",
+      "pvp": 1619.0,
+      "residual": 400.43
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 18 Pro Max 512GB",
+      "pvp": 1869.0,
+      "residual": 462.41
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 18 Pro Max 1TB",
+      "pvp": 2369.0,
+      "residual": 586.38
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 18 Pro Max 2TB",
+      "pvp": 3119.0,
+      "residual": 772.33
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 18 Pro 256GB",
+      "pvp": 1469.0,
+      "residual": 363.24
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 18 Pro 512GB",
+      "pvp": 1719.0,
+      "residual": 425.22
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 18 Pro 1TB",
+      "pvp": 2219.0,
+      "residual": 549.19
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 18 Pro 2TB",
+      "pvp": 2969.0,
+      "residual": 735.14
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone Duo 256GB",
+      "pvp": 2339.0,
+      "residual": 578.94
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone Duo 512GB",
+      "pvp": 2589.0,
+      "residual": 640.93
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone Duo 1TB",
+      "pvp": 3089.0,
+      "residual": 764.89
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone Duo 2TB",
+      "pvp": 3839.0,
+      "residual": 950.84
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17 Pro Max 256GB",
+      "pvp": 1469.0,
+      "residual": 242.16
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17 Pro Max 512GB",
+      "pvp": 1719.0,
+      "residual": 283.48
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17 Pro Max 1TB",
+      "pvp": 1969.0,
+      "residual": 324.8
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17 Pro Max 2TB",
+      "pvp": 2469.0,
+      "residual": 407.45
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17 Pro 256GB",
+      "pvp": 1319.0,
+      "residual": 217.37
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17 Pro 512GB",
+      "pvp": 1569.0,
+      "residual": 258.69
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17 Pro 1TB",
+      "pvp": 1819.0,
+      "residual": 300.01
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone Air 256GB",
+      "pvp": 1319.0,
+      "residual": 326.05
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone Air 512GB",
+      "pvp": 1569.0,
+      "residual": 388.03
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone Air 1TB",
+      "pvp": 2069.0,
+      "residual": 512.0
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17 256GB",
+      "pvp": 1109.0,
+      "residual": 273.98
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17 512GB",
+      "pvp": 1359.0,
+      "residual": 335.97
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17e 256GB",
+      "pvp": 859.0,
+      "residual": 212.0
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 17e 512GB",
+      "pvp": 1109.0,
+      "residual": 273.98
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 16 128GB",
+      "pvp": 1009.0,
+      "residual": 166.13
+    },
+    {
+      "category": "iPhone",
+      "months": 24,
+      "name": "iPhone 16e 128GB",
+      "pvp": 689.0,
+      "residual": 113.23
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 18 Pro Max 256GB",
+      "pvp": 1619.0,
+      "residual": 266.95
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 18 Pro Max 512GB",
+      "pvp": 1869.0,
+      "residual": 308.28
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 18 Pro Max 1TB",
+      "pvp": 2369.0,
+      "residual": 390.92
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 18 Pro Max 2TB",
+      "pvp": 3119.0,
+      "residual": 514.89
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 18 Pro 256GB",
+      "pvp": 1469.0,
+      "residual": 242.16
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 18 Pro 512GB",
+      "pvp": 1719.0,
+      "residual": 283.48
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 18 Pro 1TB",
+      "pvp": 2219.0,
+      "residual": 366.13
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 18 Pro 2TB",
+      "pvp": 2969.0,
+      "residual": 490.09
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone Duo 256GB",
+      "pvp": 2339.0,
+      "residual": 385.96
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone Duo 512GB",
+      "pvp": 2589.0,
+      "residual": 427.28
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone Duo 1TB",
+      "pvp": 3089.0,
+      "residual": 509.93
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone Duo 2TB",
+      "pvp": 3839.0,
+      "residual": 633.9
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17 Pro Max 256GB",
+      "pvp": 1469.0,
+      "residual": 121.08
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17 Pro Max 512GB",
+      "pvp": 1719.0,
+      "residual": 141.74
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17 Pro Max 1TB",
+      "pvp": 1969.0,
+      "residual": 162.4
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17 Pro Max 2TB",
+      "pvp": 2469.0,
+      "residual": 203.73
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17 Pro 256GB",
+      "pvp": 1319.0,
+      "residual": 108.68
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17 Pro 512GB",
+      "pvp": 1569.0,
+      "residual": 129.34
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17 Pro 1TB",
+      "pvp": 1819.0,
+      "residual": 150.01
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone Air 256GB",
+      "pvp": 1319.0,
+      "residual": 217.37
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone Air 512GB",
+      "pvp": 1569.0,
+      "residual": 258.69
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone Air 1TB",
+      "pvp": 2069.0,
+      "residual": 341.33
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17 256GB",
+      "pvp": 1109.0,
+      "residual": 182.66
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17 512GB",
+      "pvp": 1359.0,
+      "residual": 223.98
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17e 256GB",
+      "pvp": 859.0,
+      "residual": 141.33
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 17e 512GB",
+      "pvp": 1109.0,
+      "residual": 182.66
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 16 128GB",
+      "pvp": 1009.0,
+      "residual": 83.06
+    },
+    {
+      "category": "iPhone",
+      "months": 36,
+      "name": "iPhone 16e 128GB",
+      "pvp": 689.0,
+      "residual": 56.62
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Ultra 4 GPS+Cell 49mm",
+      "pvp": 899.0,
+      "residual": 148.1
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Ultra 4 GPS+Cell Milanese 49mm",
+      "pvp": 999.0,
+      "residual": 164.62
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Series 12 GPS 40/41/42mm",
+      "pvp": 449.0,
+      "residual": 92.14
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Series 12 GPS 44/45/46mm",
+      "pvp": 499.0,
+      "residual": 102.48
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Series 12 GPS+Cell 40/41/42mm",
+      "pvp": 569.0,
+      "residual": 116.94
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Series 12 GPS+Cell Titanium 40/41/42mm",
+      "pvp": 799.0,
+      "residual": 164.46
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Series 12 GPS+Cell Ceramic 40/41/42mm",
+      "pvp": 1049.0,
+      "residual": 216.11
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Series 12 GPS+Cell Titanium Milanese 40/41/42mm",
+      "pvp": 849.0,
+      "residual": 174.79
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Series 12 GPS+Cell 44/45/46mm",
+      "pvp": 619.0,
+      "residual": 127.27
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Series 12 GPS+Cell Titanium 44/45/46mm",
+      "pvp": 849.0,
+      "residual": 174.79
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Series 12 GPS+Cell Ceramic 44/45/46mm",
+      "pvp": 1099.0,
+      "residual": 226.44
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "Series 12 GPS+Cell Titanium Milanese 44/45/46mm",
+      "pvp": 899.0,
+      "residual": 185.12
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "SE 3 GPS 40/41/42mm",
+      "pvp": 269.0,
+      "residual": 21.98
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "SE 3 GPS 44/45/46mm",
+      "pvp": 299.0,
+      "residual": 24.46
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "SE 3 GPS+Cell 40/41/42mm",
+      "pvp": 319.0,
+      "residual": 26.11
+    },
+    {
+      "category": "Watch",
+      "months": 24,
+      "name": "SE 3 GPS+Cell 44/45/46mm",
+      "pvp": 349.0,
+      "residual": 28.59
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Air 13\" M5 (16G) 512GB",
+      "pvp": 1429.0,
+      "residual": 352.7
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Air 13\" M5 (16G) 1TB",
+      "pvp": 1759.0,
+      "residual": 434.52
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Air 13\" M5 (24G) 1TB",
+      "pvp": 1979.0,
+      "residual": 489.06
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Air 15\" M5 (16G) 512GB",
+      "pvp": 1729.0,
+      "residual": 427.08
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Air 15\" M5 (16G) 1TB",
+      "pvp": 2059.0,
+      "residual": 508.9
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Air 15\" M5 (24G) 1TB",
+      "pvp": 2279.0,
+      "residual": 563.44
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Neo 256GB",
+      "pvp": 799.0,
+      "residual": 131.0
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Neo 512GB",
+      "pvp": 899.0,
+      "residual": 147.53
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 14\" M6 (16G) 1TB",
+      "pvp": 2329.0,
+      "residual": 575.84
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 14\" M6 (24G) 1TB",
+      "pvp": 2549.0,
+      "residual": 630.38
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 14\" M6 (32G) 1TB",
+      "pvp": 2769.0,
+      "residual": 684.93
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 14\" M5 Pro (24G) 1TB",
+      "pvp": 2949.0,
+      "residual": 729.56
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 14\" M5 Pro (24G) 2TB",
+      "pvp": 3499.0,
+      "residual": 865.92
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 14\" M5 Pro 18 Core CPU (24G) 2TB",
+      "pvp": 3749.0,
+      "residual": 927.91
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 14\" M5 Max (36G) 2TB",
+      "pvp": 4849.0,
+      "residual": 1200.63
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 14\" M5 Pro (24G) PROLED 1TB",
+      "pvp": 3349.0,
+      "residual": 828.73
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 14\" M5 Pro (48G) PROLED 1TB",
+      "pvp": 4249.0,
+      "residual": 1051.87
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 14\" M5 Max (36G) PROLED 2TB",
+      "pvp": 5249.0,
+      "residual": 1299.81
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 16\" M5 Pro (24G) 1TB",
+      "pvp": 3449.0,
+      "residual": 853.52
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 16\" M5 Pro (48G) 1TB",
+      "pvp": 4109.0,
+      "residual": 1017.16
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 16\" M5 Max (36G) 2TB",
+      "pvp": 5149.0,
+      "residual": 1275.01
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 16\" M5 Max (48G) 2TB",
+      "pvp": 5749.0,
+      "residual": 1423.77
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 16\" M5 Pro (24G) PROLED 1TB",
+      "pvp": 3949.0,
+      "residual": 977.49
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 16\" M5 Pro (48G) PROLED 1TB",
+      "pvp": 4609.0,
+      "residual": 1141.13
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 16\" M5 Max (36G) PROLED 2TB",
+      "pvp": 5649.0,
+      "residual": 1398.98
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "MacBook Pro 16\" M5 Max (48G) PROLED 2TB",
+      "pvp": 6249.0,
+      "residual": 1547.74
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "Mac mini M6 (16G) 256GB",
+      "pvp": 1069.0,
+      "residual": 219.54
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "Mac mini M6 (16G) 512GB",
+      "pvp": 1289.0,
+      "residual": 264.99
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "Mac mini M6 (24G) 512GB",
+      "pvp": 1509.0,
+      "residual": 310.45
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "Mac mini M5 Pro (24G) 512GB",
+      "pvp": 2019.0,
+      "residual": 415.82
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "Mac Studio M5 Ultra 1TB",
+      "pvp": 6649.0,
+      "residual": 1372.43
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "Mac Studio M5 Max 512GB",
+      "pvp": 3029.0,
+      "residual": 624.5
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "iMac M6 10-core (16G) 256GB",
+      "pvp": 1819.0,
+      "residual": 374.5
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "iMac M6 12-core (16G) 256GB",
+      "pvp": 2019.0,
+      "residual": 415.82
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "iMac M6 12-core (16G) Nanotext. 256GB",
+      "pvp": 2239.0,
+      "residual": 461.27
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "iMac M6 12-core (16G) 512GB",
+      "pvp": 2239.0,
+      "residual": 461.27
+    },
+    {
+      "category": "Mac",
+      "months": 36,
+      "name": "iMac M6 12-core (24G) 512GB",
+      "pvp": 2459.0,
+      "residual": 506.73
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Wi-Fi 256GB",
+      "pvp": 1299.0,
+      "residual": 213.96
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Wi-Fi 512GB",
+      "pvp": 1549.0,
+      "residual": 255.28
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Wi-Fi 1TB",
+      "pvp": 2029.0,
+      "residual": 334.62
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Wi-Fi Nanotext. 1TB",
+      "pvp": 2159.0,
+      "residual": 356.11
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Wi-Fi 2TB",
+      "pvp": 2649.0,
+      "residual": 437.1
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Wi-Fi Nanotext. 2TB",
+      "pvp": 2779.0,
+      "residual": 458.59
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Cell 256GB",
+      "pvp": 1549.0,
+      "residual": 255.28
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Cell 512GB",
+      "pvp": 1799.0,
+      "residual": 296.61
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Cell 1TB",
+      "pvp": 2279.0,
+      "residual": 375.94
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Cell Nanotext. 1TB",
+      "pvp": 2409.0,
+      "residual": 397.43
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Cell 2TB",
+      "pvp": 2899.0,
+      "residual": 478.42
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 11\" M5 Cell Nanotext. 2TB",
+      "pvp": 3029.0,
+      "residual": 499.91
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Wi-Fi 256GB",
+      "pvp": 1649.0,
+      "residual": 271.81
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Wi-Fi 512GB",
+      "pvp": 1899.0,
+      "residual": 313.13
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Wi-Fi 1TB",
+      "pvp": 2379.0,
+      "residual": 392.47
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Wi-Fi Nanotext. 1TB",
+      "pvp": 2509.0,
+      "residual": 413.96
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Wi-Fi 2TB",
+      "pvp": 2999.0,
+      "residual": 494.95
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Wi-Fi Nanotext. 2TB",
+      "pvp": 3129.0,
+      "residual": 516.44
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Cell 256GB",
+      "pvp": 1899.0,
+      "residual": 313.13
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Cell 512GB",
+      "pvp": 2149.0,
+      "residual": 354.46
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Cell 1TB",
+      "pvp": 2629.0,
+      "residual": 433.8
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Cell Nanotext. 1TB",
+      "pvp": 2759.0,
+      "residual": 455.28
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Cell 2TB",
+      "pvp": 3249.0,
+      "residual": 536.27
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Pro 13\" M5 Cell Nanotext. 2TB",
+      "pvp": 3379.0,
+      "residual": 557.76
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 11\" M4 Wi-Fi 128GB",
+      "pvp": 799.0,
+      "residual": 164.15
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 11\" M4 Wi-Fi 256GB",
+      "pvp": 939.0,
+      "residual": 193.07
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 11\" M4 Wi-Fi 512GB",
+      "pvp": 1179.0,
+      "residual": 242.66
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 11\" M4 Wi-Fi 1TB",
+      "pvp": 1569.0,
+      "residual": 323.24
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 11\" M4 Cell 128GB",
+      "pvp": 969.0,
+      "residual": 199.27
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 11\" M4 Cell 256GB",
+      "pvp": 1109.0,
+      "residual": 228.2
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 11\" M4 Cell 512GB",
+      "pvp": 1349.0,
+      "residual": 277.78
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 11\" M4 Cell 1TB",
+      "pvp": 1739.0,
+      "residual": 358.36
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 13\" M4 Wi-Fi 128GB",
+      "pvp": 999.0,
+      "residual": 205.47
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 13\" M4 Wi-Fi 256GB",
+      "pvp": 1139.0,
+      "residual": 234.39
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 13\" M4 Wi-Fi 512GB",
+      "pvp": 1379.0,
+      "residual": 283.98
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 13\" M4 Wi-Fi 1TB",
+      "pvp": 1769.0,
+      "residual": 364.56
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 13\" M4 Cell 128GB",
+      "pvp": 1169.0,
+      "residual": 240.59
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 13\" M4 Cell 256GB",
+      "pvp": 1309.0,
+      "residual": 269.52
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 13\" M4 Cell 512GB",
+      "pvp": 1549.0,
+      "residual": 319.11
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad Air 13\" M4 Cell 1TB",
+      "pvp": 1939.0,
+      "residual": 399.68
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad A16 (2025) Wi-Fi 128GB",
+      "pvp": 499.0,
+      "residual": 81.73
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad A16 (2025) Wi-Fi 256GB",
+      "pvp": 629.0,
+      "residual": 103.22
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad A16 (2025) Wi-Fi 512GB",
+      "pvp": 879.0,
+      "residual": 144.54
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad A16 (2025) Cellular 128GB",
+      "pvp": 669.0,
+      "residual": 109.83
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad A16 (2025) Cellular 256GB",
+      "pvp": 799.0,
+      "residual": 131.32
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad A16 (2025) Cellular 512GB",
+      "pvp": 1049.0,
+      "residual": 172.64
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad mini (2026) Wi-Fi 128GB",
+      "pvp": 749.0,
+      "residual": 153.82
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad mini (2026) Wi-Fi 256GB",
+      "pvp": 879.0,
+      "residual": 180.68
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad mini (2026) Wi-Fi Nanotext. 256GB",
+      "pvp": 1009.0,
+      "residual": 207.53
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad mini (2026) Wi-Fi 512GB",
+      "pvp": 1129.0,
+      "residual": 232.33
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad mini (2026) Wi-Fi Nanotext. 512GB",
+      "pvp": 1259.0,
+      "residual": 259.19
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad mini (2026) Cellular 128GB",
+      "pvp": 919.0,
+      "residual": 188.94
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad mini (2026) Cellular 256GB",
+      "pvp": 1049.0,
+      "residual": 215.8
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad mini (2026) Cellular Nanotext. 256GB",
+      "pvp": 1179.0,
+      "residual": 242.66
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad mini (2026) Cellular 512GB",
+      "pvp": 1299.0,
+      "residual": 267.45
+    },
+    {
+      "category": "iPad",
+      "months": 36,
+      "name": "iPad mini (2026) Cellular Nanotext. 512GB",
+      "pvp": 1429.0,
+      "residual": 294.31
+    }
+  ]
+}

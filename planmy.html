@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#eaf2ff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="planmy.css">
+  <title>PlanMy · Champion+</title>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar planmy-topbar">
+    <a class="back-button" href="index.html" aria-label="Volver al catálogo"><span aria-hidden="true">‹</span><strong>Volver al catálogo</strong></a>
+    <div class="brand">
+      <img class="brand-logo" src="images/apple-champion-plus.jpg" alt="Apple Champion+ · Apple Excellence">
+      <div class="brand-copy"><strong>Apple Champion+</strong><span>PlanMy</span></div>
+    </div>
+  </header>
+  <main class="planmy-main">
+    <section class="planmy-intro glass">
+      <p class="eyebrow">Calculadora de financiación</p>
+      <img class="hero-eci-logo" src="images/el-corte-ingles-logo.svg" alt="El Corte Inglés">
+      <h1>PlanMy</h1>
+      <p>Selecciona un producto para consultar una estimación de cuotas y valor residual.</p>
+    </section>
+    <section class="calculator glass" aria-labelledby="calculatorTitle">
+      <div class="calculator-heading">
+        <div><p class="eyebrow">Configura tu simulación</p><h2 id="calculatorTitle">Elige el producto</h2></div>
+        <span id="planBadge" class="plan-badge">24 meses</span>
+      </div>
+      <div class="category-selector" id="categorySelector" aria-label="Familia de producto"></div>
+      <div class="calculator-fields">
+        <label><span>Plazo</span><select id="termSelect"></select></label>
+        <label class="product-field"><span>Modelo y configuración</span><select id="productSelect"></select></label>
+        <label><span>Importe</span><span class="price-input"><input id="priceInput" type="number" min="1" step="1" inputmode="decimal"><b>€</b></span></label>
+      </div>
+    </section>
+    <section id="results" class="results glass" aria-live="polite">
+      <div class="result-hero"><span>Cuota mensual estimada</span><strong id="monthlyPayment">—</strong></div>
+      <div class="result-grid">
+        <div><span>Número de cuotas</span><strong id="paymentCount">—</strong></div>
+        <div><span>Última cuota</span><strong id="residualPayment">—</strong></div>
+        <div><span>Intereses</span><strong id="interestAmount">—</strong></div>
+        <div><span>Total adeudado</span><strong id="totalAmount">—</strong></div>
+      </div>
+      <div class="rate-summary"><span id="tinValue">TIN —</span><span id="taeValue">TAE —</span></div>
+      <p class="calculator-note">Simulación orientativa basada en la tabla PLANmy del 6 de noviembre de 2026. La concesión y las condiciones definitivas están sujetas a la aprobación de la entidad financiera.</p>
+    </section>
+  </main>
+  <script src="planmy.js" defer></script>
+</body>
+</html>

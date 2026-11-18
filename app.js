@@ -1,4 +1,4 @@
-const state={products:[],query:"",family:null,subfamily:null};
+const state={products:[],query:"",family:null,subfamily:null,connectivity:null};
 const $=id=>document.getElementById(id);
 const iconFor=f=>/iphone/i.test(f)?"▯":/ipad/i.test(f)?"▭":/watch/i.test(f)?"◉":/macbook/i.test(f)?"⌨":/imac|pantalla/i.test(f)?"▣":"◆";
 const imageFor=p=>{
@@ -56,7 +56,7 @@ const iphoneModels=()=>[...new Set(state.products.filter(p=>p.family==="iPhone")
   const ai=iphoneModelOrder.indexOf(a),bi=iphoneModelOrder.indexOf(b);
   return (ai<0?99:ai)-(bi<0?99:bi)||a.localeCompare(b,"es");
 });
-const topFamily=p=>/^iPad(?: |$)/.test(p.family)?"iPad":["iMac","Mac mini","Mac Studio","Pantallas"].includes(p.family)?"Mac":/^MacBook(?: |$)/.test(p.family)?"MacBook":filterFamily(p);
+const topFamily=p=>["AirPods","EarPods","HomePod"].includes(p.family)?"Audio":/^iPad(?: |$)/.test(p.family)?"iPad":["iMac","Mac mini","Mac Studio","Pantallas"].includes(p.family)?"Mac":/^MacBook(?: |$)/.test(p.family)?"MacBook":filterFamily(p);
 const watchModel=p=>p.name.match(/^Watch\s+(SE\s+\d+|Series\s+\d+|Ultra\s+\d+)/i)?.[1]||"Otros";
 const subfamilyFor=p=>{
   if(topFamily(p)==="iPhone")return iphoneModel(p);
@@ -68,6 +68,7 @@ const subfamilyFor=p=>{
   }
   if(topFamily(p)==="Mac")return p.family==="Pantallas"?(/Studio Display XDR/i.test(p.name)?"Studio Display XDR":"Studio Display"):p.family;
   if(topFamily(p)==="Apple Watch")return watchModel(p);
+  if(topFamily(p)==="Audio")return p.family;
   if(topFamily(p)==="MacBook")return filterFamily(p);
   return null;
 };
@@ -76,6 +77,7 @@ const pickerConfig={
   iPad:{title:"Modelos de iPad",label:"iPad",items:()=>["iPad A16","iPad Air 11","iPad Air 13","iPad mini","iPad Pro 11","iPad Pro 13"]},
   Mac:{title:"Ordenadores de sobremesa",label:"Mac",items:()=>["iMac","Mac mini","Mac Studio","Studio Display","Studio Display XDR"]},
   "Apple Watch":{title:"Modelos de Apple Watch",label:"Apple Watch",items:()=>["SE 3","Series 12","Ultra 4"]},
+  Audio:{title:"Familias de audio",label:"Audio",items:()=>["AirPods","EarPods","HomePod"]},
   MacBook:{title:"Portátiles Apple",label:"MacBook",items:()=>["MacBook Air","MacBook Neo","MacBook Pro 14","MacBook Pro 16","MacBook ProLED"]}
 };
 const isCellular=p=>/cellular|\bcell\b|wi[\s‑-]*fi\s*\+\s*cellular/i.test(p.name);
@@ -115,6 +117,8 @@ function visibleProducts(){
     if(!tokens.length&&pickerConfig[state.family]&&!state.subfamily)return false;
     if(requestsCellular&&!isCellular(p))return false;
     if(requestsGPSOnly&&isCellular(p))return false;
+    if(state.connectivity==="gps"&&isCellular(p))return false;
+    if(state.connectivity==="cell"&&!isCellular(p))return false;
     const matchesFamily=tokens.length>0||topFamily(p)===state.family;
     const matchesModel=tokens.length>0||!pickerConfig[state.family]||subfamilyFor(p)===state.subfamily;
     return matchesFamily&&matchesModel&&matchesStructuredQuery(p)&&tokens.every(token=>matchesToken(p,token));
@@ -124,7 +128,7 @@ function renderFilters(){
   const sortedFamilies=[...new Set(state.products.map(topFamily))].sort((a,b)=>a.localeCompare(b,"es",{numeric:true,sensitivity:"base"}));
   const families=sortedFamilies;
   $("filters").innerHTML=families.map(f=>`<button class="filter ${f===state.family?"active":""}" data-family="${f}">${f}</button>`).join("");
-  $("filters").querySelectorAll("button").forEach(b=>b.onclick=()=>{state.family=b.dataset.family;state.subfamily=null;renderFilters();renderSectionPicker();renderProducts()});
+  $("filters").querySelectorAll("button").forEach(b=>b.onclick=()=>{state.family=b.dataset.family;state.subfamily=null;state.connectivity=null;renderFilters();renderSectionPicker();renderProducts()});
 }
 function renderSectionPicker(){
   const picker=$("sectionPicker");
@@ -132,17 +136,17 @@ function renderSectionPicker(){
   if(!config||state.query){picker.classList.add("hidden");picker.innerHTML="";return}
   const models=config.items();
   picker.classList.remove("hidden");
-  picker.innerHTML=`<div class="picker-heading"><div><p class="eyebrow">Elige una familia</p><h2>${config.title}</h2></div>${state.subfamily?'<button id="allSubfamilies" class="picker-back">Ver familias</button>':""}</div><div class="model-grid">${models.map(model=>`<button class="model-button ${model===state.subfamily?"active":""}" data-model="${model}"><span>${config.label}</span><strong>${model.replace(/^iPhone\s+/i,"").replace(/^iPad\s+/i,"")}</strong><small>${state.products.filter(p=>subfamilyFor(p)===model).length} referencias</small></button>`).join("")}</div>`;
-  picker.querySelectorAll("[data-model]").forEach(button=>button.onclick=()=>{state.subfamily=button.dataset.model;renderSectionPicker();renderProducts()});
-  $("allSubfamilies")?.addEventListener("click",()=>{state.subfamily=null;renderSectionPicker();renderProducts()});
+  const showsConnectivity=state.family==="Apple Watch"&&["SE 3","Series 12"].includes(state.subfamily);
+  const connectivity=showsConnectivity?`<div class="connectivity-picker"><p>Elige la conectividad</p><div class="connectivity-buttons"><button class="connectivity-button ${state.connectivity==="gps"?"active":""}" data-connectivity="gps">GPS</button><button class="connectivity-button ${state.connectivity==="cell"?"active":""}" data-connectivity="cell">GPS+CELL</button></div></div>`:"";
+  picker.innerHTML=`<div class="picker-heading"><div><p class="eyebrow">Elige una familia</p><h2>${config.title}</h2></div>${state.subfamily?'<button id="allSubfamilies" class="picker-back">Ver familias</button>':""}</div><div class="model-grid">${models.map(model=>`<button class="model-button ${model===state.subfamily?"active":""}" data-model="${model}"><span>${config.label}</span><strong>${model.replace(/^iPhone\s+/i,"").replace(/^iPad\s+/i,"")}</strong></button>`).join("")}</div>${connectivity}`;
+  picker.querySelectorAll("[data-model]").forEach(button=>button.onclick=()=>{state.subfamily=button.dataset.model;state.connectivity=null;renderSectionPicker();renderProducts()});
+  picker.querySelectorAll("[data-connectivity]").forEach(button=>button.onclick=()=>{state.connectivity=button.dataset.connectivity;renderSectionPicker();renderProducts()});
+  $("allSubfamilies")?.addEventListener("click",()=>{state.subfamily=null;state.connectivity=null;renderSectionPicker();renderProducts()});
 }
 function renderProducts(){
   const products=visibleProducts();
-  const categoryLanding=!state.family&&!state.query;
   const sectionLanding=pickerConfig[state.family]&&!state.subfamily&&!state.query;
-  const sectionProductCount=sectionLanding?state.products.filter(p=>topFamily(p)===state.family).length:0;
-  $("resultCount").textContent=categoryLanding?state.products.length:sectionLanding?sectionProductCount:products.length;
-  $("resultLabel").textContent=sectionLanding?`productos de ${state.family}`:"productos disponibles";
+  const categoryLanding=!state.family&&!state.query;
   $("emptyState").classList.toggle("hidden",products.length!==0||sectionLanding||categoryLanding);
   $("catalog").innerHTML=products.map((p,i)=>`
     <button class="card" data-index="${state.products.indexOf(p)}">
@@ -208,8 +212,8 @@ async function start(){
     renderFilters();renderSectionPicker();renderProducts();
   }catch{$("catalog").innerHTML='<section class="empty glass"><h2>No se pudo cargar el catálogo</h2><p>Comprueba la conexión y vuelve a intentarlo.</p></section>'}
 }
-$("searchInput").addEventListener("input",e=>{state.query=e.target.value;if(state.query&&state.family){state.family=null;state.subfamily=null;renderFilters()}renderSectionPicker();$("clearButton").classList.toggle("hidden",!state.query);renderProducts()});
-$("clearButton").onclick=()=>{$("searchInput").value="";state.query="";state.family=null;state.subfamily=null;$("clearButton").classList.add("hidden");renderFilters();renderSectionPicker();renderProducts();$("searchInput").focus()};
+$("searchInput").addEventListener("input",e=>{state.query=e.target.value;if(state.query&&state.family){state.family=null;state.subfamily=null;state.connectivity=null;renderFilters()}renderSectionPicker();$("clearButton").classList.toggle("hidden",!state.query);renderProducts()});
+$("clearButton").onclick=()=>{$("searchInput").value="";state.query="";state.family=null;state.subfamily=null;state.connectivity=null;$("clearButton").classList.add("hidden");renderFilters();renderSectionPicker();renderProducts();$("searchInput").focus()};
 $("scanButton").onclick=startScanner;
 $("closeScanner").onclick=stopScanner;
 $("scannerDialog").addEventListener("cancel",event=>{event.preventDefault();stopScanner()});

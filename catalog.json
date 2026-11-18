@@ -5268,5 +5268,185 @@
     "status": "Vigente",
     "ean": "0195950713985",
     "details": "M5 Max · 18 CPU · 32 GPU · 36 GB · 2 TB · Plata"
+  },
+  {
+    "id": "38545744377",
+    "name": "AirPods 5ª",
+    "family": "AirPods",
+    "price": 149.0,
+    "modelCode": "MKFW4TY/A",
+    "status": "Novedad",
+    "ean": "0195951421803",
+    "details": "AirPods 5 con estuche de carga USB-C"
+  },
+  {
+    "id": "38545744369",
+    "name": "AirPods 5ª (⚡ Inalámb.)",
+    "family": "AirPods",
+    "price": 169.0,
+    "modelCode": "MKFT4TY/A",
+    "status": "Novedad",
+    "ean": "0195951421872",
+    "details": "AirPods 5 con estuche de carga inalámbrica"
+  },
+  {
+    "id": "38545742751",
+    "name": "AirPods Pro 3ª",
+    "family": "AirPods",
+    "price": 249.0,
+    "modelCode": "MFHP4ZM/A",
+    "status": "Vigente",
+    "ean": "0195950543742",
+    "details": "AirPods Pro de 3.ª generación"
+  },
+  {
+    "id": "38545859696",
+    "name": "AirPods Max 2 Midnight",
+    "family": "AirPods",
+    "price": 579.0,
+    "modelCode": "MHWK4ZM/A",
+    "status": "Vigente",
+    "ean": "0195951039176",
+    "details": "AirPods Max 2 · Medianoche"
+  },
+  {
+    "id": "38545859712",
+    "name": "AirPods Max 2 Starlight",
+    "family": "AirPods",
+    "price": 579.0,
+    "modelCode": "MHWL4ZM/A",
+    "status": "Vigente",
+    "ean": "0195951039299",
+    "details": "AirPods Max 2 · Blanco estrella"
+  },
+  {
+    "id": "38545859704",
+    "name": "AirPods Max 2 Blue",
+    "family": "AirPods",
+    "price": 579.0,
+    "modelCode": "MHWM4ZM/A",
+    "status": "Vigente",
+    "ean": "0195951039411",
+    "details": "AirPods Max 2 · Azul"
+  },
+  {
+    "id": "38545859670",
+    "name": "AirPods Max 2 Orange",
+    "family": "AirPods",
+    "price": 579.0,
+    "modelCode": "MHWN4ZM/A",
+    "status": "Vigente",
+    "ean": "0195951039534",
+    "details": "AirPods Max 2 · Naranja"
+  },
+  {
+    "id": "38545859688",
+    "name": "AirPods Max 2 Purple",
+    "family": "AirPods",
+    "price": 579.0,
+    "modelCode": "MHWP4ZM/A",
+    "status": "Vigente",
+    "ean": "0195951039657",
+    "details": "AirPods Max 2 · Púrpura"
+  },
+  {
+    "id": "38545833279",
+    "name": "EarPods 3.5mm",
+    "family": "EarPods",
+    "price": 19.0,
+    "modelCode": "MNHF2ZM/A",
+    "status": "Vigente",
+    "ean": "0190198107077",
+    "details": "EarPods con conector de 3,5 mm"
+  },
+  {
+    "id": "38545721730",
+    "name": "EarPods Lightning",
+    "family": "EarPods",
+    "price": 19.0,
+    "modelCode": "MMTN2ZM/A",
+    "status": "Vigente",
+    "ean": "0190198001733",
+    "details": "EarPods con conector Lightning"
+  },
+  {
+    "id": "38545737777",
+    "name": "EarPods USB-C",
+    "family": "EarPods",
+    "price": 19.0,
+    "modelCode": "MTJY3ZM/A",
+    "status": "Vigente",
+    "ean": "0195949121487",
+    "details": "EarPods con conector USB-C"
+  },
+  {
+    "id": "38520000191",
+    "name": "HomePod Midnight",
+    "family": "HomePod",
+    "price": 399.0,
+    "modelCode": "MQJ73ZD/A",
+    "status": "Vigente",
+    "ean": "0194253467762",
+    "details": "HomePod · Medianoche"
+  },
+  {
+    "id": "38520000209",
+    "name": "HomePod White",
+    "family": "HomePod",
+    "price": 399.0,
+    "modelCode": "MQJ83ZD/A",
+    "status": "Vigente",
+    "ean": "0194253468127",
+    "details": "HomePod · Blanco"
+  },
+  {
+    "id": "38520000225",
+    "name": "HomePod Mini 2 - Midnight",
+    "family": "HomePod",
+    "price": 169.0,
+    "modelCode": "MGHJ4QL/A",
+    "status": "Novedad",
+    "ean": "0195951263243",
+    "details": "HomePod mini 2 · Medianoche"
+  },
+  {
+    "id": "38520000233",
+    "name": "HomePod Mini 2 - White",
+    "family": "HomePod",
+    "price": 169.0,
+    "modelCode": "MGHK4QL/A",
+    "status": "Novedad",
+    "ean": "0195951263427",
+    "details": "HomePod mini 2 · Blanco"
+  },
+  {
+    "id": "38520000241",
+    "name": "HomePod Mini 2 - Green",
+    "family": "HomePod",
+    "price": 169.0,
+    "modelCode": "MGHL4QL/A",
+    "status": "Novedad",
+    "ean": "0195951263601",
+    "details": "HomePod mini 2 · Verde"
+  },
+  {
+    "id": "38520000258",
+    "name": "HomePod Mini 2 - Blue",
+    "family": "HomePod",
+    "price": 169.0,
+    "modelCode": "MGHM4QL/A",
+    "status": "Novedad",
+    "ean": "0195951263786",
+    "details": "HomePod mini 2 · Azul"
+  },
+  {
+    "id": "38520000266",
+    "name": "HomePod Mini 2 - Pink",
+    "family": "HomePod",
+    "price": 169.0,
+    "modelCode": "MGKR4QL/A",
+    "status": "Novedad",
+    "ean": "0195951263960",
+    "details": "HomePod mini 2 · Rosa"
   }
 ]
