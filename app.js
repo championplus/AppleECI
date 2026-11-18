@@ -2,6 +2,13 @@ const state={products:[],query:"",family:null,subfamily:null,connectivity:null};
 const $=id=>document.getElementById(id);
 const iconFor=f=>/iphone/i.test(f)?"▯":/ipad/i.test(f)?"▭":/watch/i.test(f)?"◉":/macbook/i.test(f)?"⌨":/imac|pantalla/i.test(f)?"▣":"◆";
 const imageFor=p=>{
+  if(p.family==="AirPods"){
+    if(/Pro 3/i.test(p.name))return "images/airpods-pro-3.png";
+    if(/Max 2/i.test(p.name))return "images/airpods-max-2.png";
+    return "images/airpods-5.png";
+  }
+  if(p.family==="EarPods")return "images/earpods.jpg";
+  if(p.family==="HomePod")return /Mini 2/i.test(p.name)?"images/homepod-mini-2.png":"images/homepod.png";
   if(p.family==="iPhone"){
     const model=iphoneModel(p);
     if(/^18 Pro/.test(model))return "images/iphone-18-pro-real.png";
@@ -117,7 +124,7 @@ function visibleProducts(){
     if(!tokens.length&&pickerConfig[state.family]&&!state.subfamily)return false;
     if(requestsCellular&&!isCellular(p))return false;
     if(requestsGPSOnly&&isCellular(p))return false;
-    if(state.connectivity==="gps"&&isCellular(p))return false;
+    if((state.connectivity==="gps"||state.connectivity==="wifi")&&isCellular(p))return false;
     if(state.connectivity==="cell"&&!isCellular(p))return false;
     const matchesFamily=tokens.length>0||topFamily(p)===state.family;
     const matchesModel=tokens.length>0||!pickerConfig[state.family]||subfamilyFor(p)===state.subfamily;
@@ -136,8 +143,9 @@ function renderSectionPicker(){
   if(!config||state.query){picker.classList.add("hidden");picker.innerHTML="";return}
   const models=config.items();
   picker.classList.remove("hidden");
-  const showsConnectivity=state.family==="Apple Watch"&&["SE 3","Series 12"].includes(state.subfamily);
-  const connectivity=showsConnectivity?`<div class="connectivity-picker"><p>Elige la conectividad</p><div class="connectivity-buttons"><button class="connectivity-button ${state.connectivity==="gps"?"active":""}" data-connectivity="gps">GPS</button><button class="connectivity-button ${state.connectivity==="cell"?"active":""}" data-connectivity="cell">GPS+CELL</button></div></div>`:"";
+  const showsWatchConnectivity=state.family==="Apple Watch"&&["SE 3","Series 12"].includes(state.subfamily);
+  const showsIPadConnectivity=state.family==="iPad"&&Boolean(state.subfamily);
+  const connectivity=showsWatchConnectivity?`<div class="connectivity-picker"><p>Elige la conectividad</p><div class="connectivity-buttons"><button class="connectivity-button ${state.connectivity==="gps"?"active":""}" data-connectivity="gps">GPS</button><button class="connectivity-button ${state.connectivity==="cell"?"active":""}" data-connectivity="cell">GPS+CELL</button></div></div>`:showsIPadConnectivity?`<div class="connectivity-picker"><p>Elige la conectividad</p><div class="connectivity-buttons"><button class="connectivity-button ${state.connectivity==="wifi"?"active":""}" data-connectivity="wifi">WI-FI</button><button class="connectivity-button ${state.connectivity==="cell"?"active":""}" data-connectivity="cell">WI-FI + CELL</button></div></div>`:"";
   picker.innerHTML=`<div class="picker-heading"><div><p class="eyebrow">Elige una familia</p><h2>${config.title}</h2></div>${state.subfamily?'<button id="allSubfamilies" class="picker-back">Ver familias</button>':""}</div><div class="model-grid">${models.map(model=>`<button class="model-button ${model===state.subfamily?"active":""}" data-model="${model}"><span>${config.label}</span><strong>${model.replace(/^iPhone\s+/i,"").replace(/^iPad\s+/i,"")}</strong></button>`).join("")}</div>${connectivity}`;
   picker.querySelectorAll("[data-model]").forEach(button=>button.onclick=()=>{state.subfamily=button.dataset.model;state.connectivity=null;renderSectionPicker();renderProducts()});
   picker.querySelectorAll("[data-connectivity]").forEach(button=>button.onclick=()=>{state.connectivity=button.dataset.connectivity;renderSectionPicker();renderProducts()});
@@ -208,7 +216,9 @@ async function startScanner(){
 }
 async function start(){
   try{
-    state.products=await fetch("catalog.json").then(r=>{if(!r.ok)throw Error();return r.json()});
+    state.products=Array.isArray(window.CHAMPION_CATALOG)
+      ? window.CHAMPION_CATALOG
+      : await fetch("catalog.json?v=43").then(r=>{if(!r.ok)throw Error();return r.json()});
     renderFilters();renderSectionPicker();renderProducts();
   }catch{$("catalog").innerHTML='<section class="empty glass"><h2>No se pudo cargar el catálogo</h2><p>Comprueba la conexión y vuelve a intentarlo.</p></section>'}
 }
