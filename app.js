@@ -109,12 +109,14 @@ const specialOrder=p=>{
 const priceOrder=p=>p.price>0?p.price:Number.MAX_SAFE_INTEGER;
 const matchesStructuredQuery=p=>{
   const query=normalize(state.query);
-  const requestedIphone=query.match(/\biphone\s+(\d+)(?:\s+(pro(?:\s+max)?|air|duo))?\b/);
-  if(!requestedIphone)return true;
-  const requestedModel=`${requestedIphone[1]}${requestedIphone[2]?` ${requestedIphone[2]}`:""}`;
-  const productModel=normalize(iphoneModel(p));
-  if(requestedIphone[2]==="pro")return productModel===requestedModel||productModel.startsWith(`${requestedModel} `);
-  return requestedIphone[2]?productModel===requestedModel:productModel.startsWith(`${requestedModel} `)||productModel===requestedModel;
+  const requestedIphone=query.match(/\biphone\s+((?:\d+e?)(?:\s+pro(?:\s+max)?)?|air|duo)\b/);
+  if(requestedIphone&&normalize(iphoneModel(p))!==requestedIphone[1])return false;
+  const requestedIPad=query.match(/\bipad\s+(pro|air|mini)\b/);
+  if(requestedIPad){
+    const requestedFamily=`ipad ${requestedIPad[1]}`;
+    if(normalize(p.family)!==requestedFamily)return false;
+  }
+  return true;
 };
 
 function visibleProducts(){
@@ -219,7 +221,7 @@ async function start(){
   try{
     state.products=Array.isArray(window.CHAMPION_CATALOG)
       ? window.CHAMPION_CATALOG
-      : await fetch("catalog.json?v=45").then(r=>{if(!r.ok)throw Error();return r.json()});
+      : await fetch("catalog.json?v=48").then(r=>{if(!r.ok)throw Error();return r.json()});
     renderFilters();renderSectionPicker();renderProducts();
   }catch{$("catalog").innerHTML='<section class="empty glass"><h2>No se pudo cargar el catálogo</h2><p>Comprueba la conexión y vuelve a intentarlo.</p></section>'}
 }
